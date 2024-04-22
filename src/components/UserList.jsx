@@ -9,8 +9,8 @@ const UserList = (props) => {
             <TextField source='name'/>
             <TextField source='email'/>
             <TextField label='Deptartment' source='company.bs'/>
-            <EditButton basepath='/users' mutationoode="pessimistic"/>
-            <DeleteButton  basepath='/users'/>
+            <EditButton basepath='/users'/>
+            <DeleteButton  basepath='/'/>
         </Datagrid>
     </List>
   )
