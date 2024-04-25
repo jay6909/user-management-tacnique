@@ -7,7 +7,7 @@ import UserCreate from './UserCreate'
 const UsersManagement = () => {
   return (
     <Admin dataProvider={dataProvider}>
-        <Resource name='users' list={UserList( {filters:[<SearchInput source="q"/>]},)} create={UserCreate}/>
+        <Resource name='users' edit={UserCreate} list={UserList( {filters:[<SearchInput source="q"/>]},)} create={UserCreate}/>
     </Admin>
   )
 }
